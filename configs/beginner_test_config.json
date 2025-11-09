@@ -1,0 +1,26 @@
+{
+  "agent_type": "BaseAgent",
+  "market": "us",
+  "date_range": {
+    "init_date": "2025-10-01",
+    "end_date": "2025-10-05"
+  },
+  "models": [
+    {
+      "name": "gpt-4o-mini",
+      "basemodel": "openai/gpt-4o-mini",
+      "signature": "gpt-4o-mini",
+      "enabled": true,
+      "comment": "가장 저렴한 모델로 테스트"
+    }
+  ],
+  "agent_config": {
+    "max_steps": 20,
+    "max_retries": 3,
+    "base_delay": 1.0,
+    "initial_cash": 10000.0
+  },
+  "log_config": {
+    "log_path": "./data/agent_data"
+  }
+}
